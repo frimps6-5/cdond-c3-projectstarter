@@ -73,9 +73,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-build]
+          keys: [frontend-test]
       - run:
-          name: Back-end build
+          name: Frontend test
           command: |
             cd frontend
             npm install
@@ -87,9 +87,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-build]
+          keys: [backend-test]
       - run:
-          name: Back-end build
+          name: Back-end test
           command: |
             cd frontend
             npm install
@@ -101,9 +101,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-build]
+          keys: [frontend-scan]
       - run:
-          name: Back-end build
+          name: Frontend scan
           command: |
             cd frontend
             npm install
@@ -116,9 +116,9 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: [backend-build]
+          keys: [backend-scan]
       - run:
-          name: Back-end build
+          name: Back-end scan
           command: |
             cd frontend
             npm install
