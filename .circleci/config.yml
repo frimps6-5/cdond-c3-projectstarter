@@ -130,7 +130,7 @@ jobs:
       - image: amazon/aws-cli
     steps:
       - checkout
-      -run:
+      - run:
          name: Install tar and gzip
          command: |
            yum -y install tar gzip
