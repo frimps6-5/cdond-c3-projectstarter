@@ -31,7 +31,7 @@ version: 2.1
 #             #  Add revert code here. You can find this in the Getting Started section.
 #               exit 1
 #             fi
-  commands:
+commands:
   dependencies:
     steps:
       - run:
@@ -88,8 +88,8 @@ version: 2.1
               npm install
               npm run migrations:revert
             fi
-            
-                      
+
+
 jobs:
   build-frontend:
     docker:
